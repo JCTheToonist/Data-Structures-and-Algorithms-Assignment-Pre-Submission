@@ -1,0 +1,7 @@
+00001,Cavendish Bananas,Banana,Fruit,1EA,0.83
+00002,Fresh Broccoli,Broccoli,Vegetable,1EA,2.28
+00003,Sweet Solanato Tomato Punnet 200g,Tomato,Fruit,1KG,3.00,0,200
+00004,Woolworths Baby Leaf Spinach 120g,Spinach,Vegetable,1KG,3.00,0.30,120
+00005,Macro Certified Organic Baby Spinach 100g,Spinach,Vegetable,1KG,4.90,0,100
+00006,Woolworths Roasted Garlic Mash 475g,Garlic,Vegetable,100G,7.10,0,475
+00007,Mushrooms Cups Loose per 200g,Mushroom,Vegetable,1KG,2.50,0.2,200
