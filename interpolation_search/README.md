@@ -25,7 +25,7 @@ The formula for probe position:
    - If it's higher than the searched value, search the lower sub-array [low, pos-1].
 4. If the search isn't complete, it will call the function recursively to search again, this time searching the new sub-array instead.
 
-###If the value can't be found
-The program has a failsafe to detect if the searched value is not in the array. If triggered, it will output a message that the searched value cannot be found.
-Whenever the probe doesn't match, the probe position's value will be included in a "failed predictions" list. While attempting to search for a value that is not present, the program will keep looping between two values trying to find a value that doesn't exist.
+### If the value can't be found
+The program has a failsafe to detect if the searched value is not in the array. If triggered, it will output a message that the searched value cannot be found.\
+Whenever the probe doesn't match, the probe position's value will be included in a "failed predictions" list. While attempting to search for a value that is not present, the program will keep looping between two values trying to find a value that doesn't exist.\
 So if it loops to a value that has already been deemed not to count, it will trigger the failsafe. This is done to prevent the recursion from looping indefinitely.
