@@ -55,8 +55,8 @@ while userinput != exit:
    
    ## Search item based on ID ##
    viewed_product = searchbyid(productlist, "Enter the ID of the product you want to view: ")
-   shopdisplay.get_item(viewed_product)
-   print(shopdisplay.display_item())
+   styledisplay.get_item(viewed_product)
+   print(styledisplay.display_item())
 
  if userinput == "search":
    ## Retrieves items that fit a keyword ##
