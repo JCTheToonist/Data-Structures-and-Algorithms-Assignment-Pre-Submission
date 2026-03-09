@@ -25,10 +25,10 @@ The main code which runs the program. It is a command-based client with several 
 - **search**: Search for a specific keyword, then displays a filtered menu that only shows products with name, type or category matching the keyword you entered.
 - **view**: Views information of a specific product based on ID. It will display the product's full details, including type and category.
 - **cart**: Opens the cart, which stores items for purchase. Items can be added or removed, but this build does not include purchase.
- - **view**: View all items currently inside the cart.
- - **add**: Add an item to the cart.
- - **rem**: Remove an item from the cart.
- - **back** / **exit**: Closes the cart menu. Items in the cart will remain even if you leave the menu.
+  - **view**: View all items currently inside the cart.
+  - **add**: Add an item to the cart.
+  - **rem**: Remove an item from the cart.
+  - **back** / **exit**: Closes the cart menu. Items in the cart will remain even if you leave the menu.
 - **exit**: Closes the program.
 
 Importing the database is done through Line 8, which contains the function that will read the file and parse it into data which is accessed through dictionaries.
@@ -36,9 +36,13 @@ You can customize the _file name_ (the name of the file) and the _separator_ (th
 ```productlist = grocery.importlist("groceries.txt", ",")```
 
 ## grocery_displays.py
-Contains the object classes grocery_display and style_display (a subclass of grocery_display). These classes store product data as dictionaries through getter and setter functions, and will display them through the display_item function. The only difference between the two classes is the output of display_item:
+Contains the object classes grocery_display and style_display (a subclass of grocery_display). These classes store product data as dictionaries through getter and setter functions, and will display them through the _display_item_ function. The only difference between the two classes is the output of _display_item_:
 * grocery_display displays the basic properties of the item, like ID, name, cost and item type.
 * style_display displays the item's full details, and is only used by the 'view' command.
 
 ## grocery_globalfunctions.py
 Contains the functions that are used globally in the project.
+- **importlist**: Used to load the file contents into database. Reads the file of the chosen filename, separating it based on the chosen separator.
+- **menupage**: Used by the menu command to ask for a page, then retrieves all products in that page.
+- **compare_dictionary**: Checks a string to see if it contains the keyword within, with both being converted to lowercase first. Only used in the searchlist function.
+- **searchlist**: Recursively searches for any products that match the keyword. Used for the search command.
