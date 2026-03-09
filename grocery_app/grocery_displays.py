@@ -37,7 +37,7 @@ class grocery_display:
         viewedprod = self.itemdata
         format_price = lambda price : f"${price:.2f}"
         converted_price = 0
-        discountedprice = float(viewedprod["id"]) - float(viewedprod["discount"])
+        discountedprice = float(viewedprod["cost"]) - float(viewedprod["discount"])
         if viewedprod["discount"] > 0:
          display_discount = f" (was {format_price(viewedprod["cost"])}, save {format_price(viewedprod["discount"])})"
         else:
